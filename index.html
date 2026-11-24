@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700&family=Cinzel:wght@500;600;700&family=Jost:wght@300;400;500;600&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Lato:wght@300;400;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=Jost:wght@400;500;600;700&family=Great+Vibes&family=Lato:wght@400;700;900&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
 
   <!-- Font Awesome -->
@@ -116,6 +116,55 @@
       <div class="hero__gradient"></div>
     </div>
 
+    <!-- Traditional Hanging Brass Vilakku (Lamps) -->
+    <div class="hanging-vilakku hanging-vilakku--left" aria-hidden="true">
+      <svg viewBox="0 0 70 300" class="vilakku-svg" xmlns="http://www.w3.org/2000/svg">
+        <line x1="35" y1="0" x2="35" y2="170" stroke="#d6be8c" stroke-width="2.5" stroke-dasharray="8,5" />
+        <ellipse cx="35" cy="175" rx="12" ry="5" fill="#b89656" />
+        <path d="M35 175 L22 205 L48 205 Z" fill="#9b7d46" />
+        <ellipse cx="35" cy="205" rx="22" ry="7" fill="#dfc89a" />
+        <path d="M35 205 L16 240 L54 240 Z" fill="#b89656" />
+        <ellipse cx="35" cy="240" rx="32" ry="10" fill="#dfc89a" stroke="#b89656" stroke-width="2" />
+        <polygon points="8,240 0,236 8,232" fill="#b89656" />
+        <polygon points="62,240 70,236 62,232" fill="#b89656" />
+        <path d="M35 240 L35 272" stroke="#b89656" stroke-width="3" />
+        <circle cx="35" cy="276" r="6" fill="#dfc89a" />
+        <!-- Glowing Flames -->
+        <ellipse cx="3" cy="235" rx="4" ry="7" fill="#ffb703" class="flame" />
+        <ellipse cx="67" cy="235" rx="4" ry="7" fill="#ffb703" class="flame" />
+        <ellipse cx="35" cy="236" rx="5" ry="9" fill="#ffd166" class="flame flame-center" />
+      </svg>
+    </div>
+    <div class="hanging-vilakku hanging-vilakku--right" aria-hidden="true">
+      <svg viewBox="0 0 70 300" class="vilakku-svg" xmlns="http://www.w3.org/2000/svg">
+        <line x1="35" y1="0" x2="35" y2="170" stroke="#d6be8c" stroke-width="2.5" stroke-dasharray="8,5" />
+        <ellipse cx="35" cy="175" rx="12" ry="5" fill="#b89656" />
+        <path d="M35 175 L22 205 L48 205 Z" fill="#9b7d46" />
+        <ellipse cx="35" cy="205" rx="22" ry="7" fill="#dfc89a" />
+        <path d="M35 205 L16 240 L54 240 Z" fill="#b89656" />
+        <ellipse cx="35" cy="240" rx="32" ry="10" fill="#dfc89a" stroke="#b89656" stroke-width="2" />
+        <polygon points="8,240 0,236 8,232" fill="#b89656" />
+        <polygon points="62,240 70,236 62,232" fill="#b89656" />
+        <path d="M35 240 L35 272" stroke="#b89656" stroke-width="3" />
+        <circle cx="35" cy="276" r="6" fill="#dfc89a" />
+        <!-- Glowing Flames -->
+        <ellipse cx="3" cy="235" rx="4" ry="7" fill="#ffb703" class="flame" />
+        <ellipse cx="67" cy="235" rx="4" ry="7" fill="#ffb703" class="flame" />
+        <ellipse cx="35" cy="236" rx="5" ry="9" fill="#ffd166" class="flame flame-center" />
+      </svg>
+    </div>
+
+    <!-- Traditional Floating Floral Petals -->
+    <div class="floating-petals-container" aria-hidden="true">
+      <span class="petal petal--marigold" style="left:8%; animation-duration:12s; animation-delay:0s;"></span>
+      <span class="petal petal--jasmine" style="left:22%; animation-duration:9s; animation-delay:2s;"></span>
+      <span class="petal petal--gold" style="left:38%; animation-duration:14s; animation-delay:1s;"></span>
+      <span class="petal petal--marigold" style="left:52%; animation-duration:11s; animation-delay:3s;"></span>
+      <span class="petal petal--jasmine" style="left:68%; animation-duration:10s; animation-delay:1.5s;"></span>
+      <span class="petal petal--marigold" style="left:82%; animation-duration:13s; animation-delay:0.5s;"></span>
+      <span class="petal petal--gold" style="left:92%; animation-duration:8s; animation-delay:2.5s;"></span>
+    </div>
+
     <!-- Solid cover — hides photo until arch opens -->
     <div class="hero__cover" id="heroCover" aria-hidden="true"></div>
 
@@ -128,53 +177,14 @@
 
     <div class="hero__stage is-revealed" id="heroStage">
 
-      <!-- The Nikah Arch — commented out; gate replaces this entry point -->
-      <!--
-      <div class="arch-frame" id="archFrame">
-
-        <svg class="arch-leaf arch-leaf--left" id="archLeft" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
-          <path d="M220,420 L220,120 C220,55 175,10 110,0 L110,420 Z" />
-          <path class="arch-leaf__inline" d="M110,20 C165,32 200,68 200,122 L200,400" />
-        </svg>
-
-        <svg class="arch-leaf arch-leaf--right" id="archRight" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,420 L0,120 C0,55 45,10 110,0 L110,420 Z" />
-          <path class="arch-leaf__inline" d="M110,20 C55,32 20,68 20,122 L20,400" />
-        </svg>
-
-        <svg class="garland" viewBox="0 0 440 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path class="garland__string" d="M10,10 Q220,70 430,10" />
-          <g class="garland__buds">
-            <circle cx="40"  cy="24" r="5"></circle>
-            <circle cx="80"  cy="35" r="6"></circle>
-            <circle cx="120" cy="43" r="5"></circle>
-            <circle cx="160" cy="48" r="6"></circle>
-            <circle cx="200" cy="51" r="5"></circle>
-            <circle cx="240" cy="51" r="5"></circle>
-            <circle cx="280" cy="48" r="6"></circle>
-            <circle cx="320" cy="43" r="5"></circle>
-            <circle cx="360" cy="35" r="6"></circle>
-            <circle cx="400" cy="24" r="5"></circle>
-          </g>
-        </svg>
-
-        <button type="button" class="arch-cta" id="archCta" aria-label="Open the invitation">
-          <span class="arch-cta__ring"></span>
-          <span class="arch-cta__label">Open the Invitation</span>
-        </button>
-
-        <div class="ring-particles" id="ringParticles" aria-hidden="true"></div>
-      </div>
-      -->
-
       <!-- Revealed content -->
       <div class="hero__reveal" id="heroReveal">
         <p class="eyebrow reveal-item" data-reveal="1">Bismillāhir Raḥmānir Raḥīm</p>
 
         <p class="hero__names reveal-item" data-reveal="2">
-          <span class="hero__name"><b class="hero__lead-letter">M</b>OHAMMED <b class="hero__lead-letter">A</b>AMIR <b class="hero__lead-letter">H</b>USSAIN <span style="font-size:0.6em; opacity:0.85; font-weight:400; letter-spacing:0.05em;">(B.E)</span></span>
+          <span class="hero__name"><b class="hero__lead-letter">M</b>OHAMMED <b class="hero__lead-letter">A</b>AMIR <b class="hero__lead-letter">H</b>USSAIN <span class="hero__degree">B.E</span></span>
           <span class="hero__amp">&amp;</span>
-          <span class="hero__name"><b class="hero__lead-letter">R</b>UQIYA <b class="hero__lead-letter">K</b>HAMROON <span style="font-size:0.6em; opacity:0.85; font-weight:400; letter-spacing:0.05em;">(M.Sc)</span></span>
+          <span class="hero__name"><b class="hero__lead-letter">R</b>UQIYA <b class="hero__lead-letter">K</b>HAMROON <span class="hero__degree">M.Sc</span></span>
         </p>
 
         <p class="script-line reveal-item" data-reveal="3">are getting married</p>
@@ -310,18 +320,18 @@
         <!-- Groom's Family -->
         <div class="parents-card" data-aos="fade-right">
           <p class="parents-card-title">Groom's Family</p>
-          <span class="parents-card-name">Mohammed Aamir Hussain <small style="font-size:0.65em; font-weight:normal; opacity:0.85;">(B.E)</small></span>
+          <span class="parents-card-name">Mohammed Aamir Hussain <span class="card-degree">B.E</span></span>
           <div class="parents-card-parent">
             <strong>Son of</strong>
-            Late Abdul Basheer (Ex KSTDC)<br />&amp;<br />
-            Mrs. Sadiqa Khatoon (B.Com)
+            Late Abdul Basheer <span class="parent-sub">(Ex KSTDC)</span><br />&amp;<br />
+            Mrs. Sadiqa Khatoon <span class="parent-sub">(B.Com)</span>
           </div>
         </div>
 
         <!-- Bride's Family -->
         <div class="parents-card" data-aos="fade-left">
           <p class="parents-card-title">Bride's Family</p>
-          <span class="parents-card-name">Ruqiya Khamroon <small style="font-size:0.65em; font-weight:normal; opacity:0.85;">(M.Sc)</small></span>
+          <span class="parents-card-name">Ruqiya Khamroon <span class="card-degree">M.Sc</span></span>
           <div class="parents-card-parent">
             <strong>Daughter of</strong>
             Mr. Altaf Pasha<br />&amp;<br />
@@ -335,17 +345,17 @@
         <!-- Hosted By -->
         <div class="parents-card" data-aos="fade-up">
           <p class="parents-card-title">Invitation Hosted By</p>
-          <span class="parents-card-name" style="font-size:clamp(18px,2.2vw,24px);">Muthvali Abdul Rawoof Saheb</span>
+          <span class="parents-card-name host-name">Muthvali Abdul Rawoof Saheb</span>
           <div class="parents-card-parent" style="margin-top:10px;">
             &amp; Family
           </div>
         </div>
 
         <!-- Special Invitation -->
-        <div class="parents-card" data-aos="fade-up" data-aos-delay="100">
-          <p class="parents-card-title">Special Invitation</p>
-          <span class="parents-card-name" style="font-size:clamp(18px,2.2vw,24px);">KGN Group</span>
-          <div class="parents-card-parent" style="margin-top:10px;">
+        <div class="parents-card special-invitation-card" data-aos="fade-up" data-aos-delay="100">
+          <p class="parents-card-title special-title"><i class="fas fa-crown"></i> Special Invitation</p>
+          <span class="parents-card-name kgn-bold-title">KGN GROUP’S</span>
+          <div class="parents-card-parent special-welcome" style="margin-top:10px;">
             Warmly Welcomes You
           </div>
         </div>
@@ -456,6 +466,35 @@
             aria-label="Open MS Community Hall venue in Google Maps">
             <i class="fas fa-map" aria-hidden="true"></i>
             Open in Google Maps
+          </a>
+        </div>
+      </div>
+
+      <!-- ===== VENUE SHOWCASE WITH AUDITORIUM PHOTO ===== -->
+      <div class="venue-showcase" data-aos="fade-up" data-aos-delay="200">
+        <div class="venue-showcase__image-wrapper">
+          <img src="assets/images/venue.jpg" alt="MS Community Hall Auditorium" class="venue-showcase__image" />
+          <div class="venue-showcase__badge">
+            <i class="fas fa-landmark"></i> Wedding Venue
+          </div>
+          <div class="venue-showcase__overlay"></div>
+        </div>
+        <div class="venue-showcase__info">
+          <div class="venue-showcase__header">
+            <span class="venue-showcase__eyebrow"><i class="fas fa-location-dot"></i> Mulbagal, Karnataka</span>
+            <h3 class="venue-showcase__title">MS Community Hall</h3>
+            <p class="venue-showcase__location">Near Sangam Theater Road, Mulbagal</p>
+          </div>
+          <div class="venue-showcase__tags">
+            <span class="venue-tag"><i class="fas fa-snowflake"></i> Fully Air Conditioned</span>
+            <span class="venue-tag"><i class="fas fa-utensils"></i> Grand Dining Hall</span>
+            <span class="venue-tag"><i class="fas fa-square-parking"></i> Spacious Car Parking</span>
+            <span class="venue-tag"><i class="fas fa-mosque"></i> Prayer Area</span>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=MS+Community+Hall+Near+Sangam+Theater+Road+Mulbagal" target="_blank" rel="noopener noreferrer" class="maps-btn venue-showcase__btn"
+            aria-label="Get Directions to MS Community Hall in Google Maps">
+            <i class="fas fa-diamond-turn-right"></i>
+            Get Directions on Google Maps
           </a>
         </div>
       </div>
